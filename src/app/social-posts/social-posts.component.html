@@ -1,0 +1,5 @@
+<app-single-post *ngFor="let p of Post" [DisplayPost]="p"></app-single-post>
+
+
+
+<app-post-form (PostCreated)="AddPost($event)"></app-post-form>
