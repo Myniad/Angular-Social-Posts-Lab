@@ -22,7 +22,7 @@ export class SocialPostsComponent {
     }
   ];
 
-  AddPost(newPost:Post){
+  AddPost(newPost:Post):void{
     this.Post.push(newPost);
   }
 

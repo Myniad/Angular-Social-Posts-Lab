@@ -1,3 +1,5 @@
+<button (click)="toggleDisplay()">New Post?</button>
+<div *ngIf="display">
 <h2>Create a new Angular social post!</h2>
 <p>Title: </p>
 <input type="text" [(ngModel)]="newPost.title"/>
@@ -5,3 +7,4 @@
 <input type="text" [(ngModel)]="newPost.thought"/>
 <br><br>
 <button (click)="CreatePost()">Create Post</button>
+</div>

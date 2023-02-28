@@ -7,6 +7,7 @@ import { Post } from '../post';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent {
+  display:boolean=false;
   newPost:Post={} as Post;
   @Output() PostCreated = new EventEmitter<Post>();
 
@@ -18,8 +19,8 @@ export class PostFormComponent {
     this.PostCreated.emit(result);
   }
 
-  toggleDisplay(){
-    
+  toggleDisplay():void{
+    this.display=!this.display;
   }
 
 }
